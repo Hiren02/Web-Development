@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS| String and String methods</title>
+</head>
+<body>
+    <div class="contaier">
+        <h1>String methods</h1>
+        <div id="content"></div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis aliquam eum itaque assumenda adipisci ex voluptatibus perspiciatis dicta? Perspiciatis quod saepe sed? Consectetur delectus assumenda in repellendus quas optio, obcaecati aliquid ex.</p>
+       
+    </div>
+    <script>
+        var String='th"is';
+        var name='Vasu';
+        var message="Vasu is a good boy";
+        var temp= `${name} is a nice person`;
+        // console.log(string + name + message);
+        console.log(temp);
+        var len=name.length;
+        console.log(`Length of name is ${len}`);
+
+        document.getElementById('content').innerHTML= `<h3> This is an h3 heading</h3>`        
+    </script>
+</body>
+</html>

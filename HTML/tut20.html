@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-color: rgb(211, 148, 129);
+            background-image: url('buttki.jpeg');
+        }
+        .container{
+            height: 150px;
+            width: 500px;
+            background-color: grey;
+            border: 3px solid rgb(129, 199, 129);
+            padding: 70px;
+            padding: 23px 34px 45px 56px; /*top right bottom left*/
+            margin: 32px;
+            border-radius: 20px;
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+<body>
+    <div class ="container">
+        <h3>This is Box Model</h3>
+        <p id="first">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum dicta asperiores quis voluptatibus iusto? Sequi laborum eum eos excepturi vitae iure, in officia non sunt corrupti maxime fuga itaque ad.</p>
+    </div>
+    <div class ="container">
+        <h3>This is Box Model</h3>
+        <p id="second">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum dicta asperiores quis voluptatibus iusto? Sequi laborum eum eos excepturi vitae iure, in officia non sunt corrupti maxime fuga itaque ad.</p>
+    </div>
+    <div class ="container">
+        <h3>This is Box Model</h3>
+        <p id="third">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum dicta asperiores quis voluptatibus iusto? Sequi laborum eum eos excepturi vitae iure, in officia non sunt corrupti maxime fuga itaque ad.</p>
+    </div>
+
+
+</body>
+</html>

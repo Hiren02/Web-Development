@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<style>
+    #btn{
+        padding: 10px 14px;
+        color: rgb(233, 82, 62);
+        border-radius: 2px solid black;
+        font-weight: bold;
+        background-color: rgb(233, 201, 160);
+        border-radius: 12px;
+        /* cursor: ; */
+    }
+</style>
+<body>
+    
+    <div class="container">
+        <h1>This is my heading</h1>
+        <p id="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim fugit sequi distinctio, iusto molestiae exercitationem, dignissimos eaque, ullam rem blanditiis ipsa. Voluptate expedita quam soluta unde eveniet sequi id. Accusamus, vero voluptates? Rem, numquam.</p>
+    </div>
+    <button id="btn" onclick="toggleHide()">Show/Hide</button>
+    <script>
+        let para = document.getElementById('para');
+        para.addEventListener('mouseover',function run(){
+            // console.log('mouse inside')
+            alert('mouse inside')
+        });
+        para.addEventListener('mouseout',function run(){
+            // console.log('mouse outside')
+            alert('mouse outside')
+        });
+
+        function toggleHide(){
+           let btn = document.getElementById('btn');
+           let para = document.getElementById('para');
+           if(para.style.display !='none'){
+
+               para.style.display= 'none';
+           }
+           else{
+            para.style.display = 'block';
+           }
+        }
+
+    </script>
+
+</body>
+</html>

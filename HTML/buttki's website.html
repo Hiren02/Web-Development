@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Buttki's Website</title>
+    <style>
+        .navbar {
+            background-color: rgb(189, 236, 199);
+            border-radius: 15px;
+        }
+
+        .navbar ul {
+            overflow: auto;
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: 13px 20px;
+            border: rgb(184, 216, 69) solid black;
+            border-radius: 4px;
+
+        }
+
+        .navbar li a {
+            padding: 3px 3px;
+            text-decoration: none;
+            color: rgb(187, 27, 88);
+            border: rgb(184, 216, 69) solid black;
+            border-radius: 4px;
+        }
+
+        .navbar li a:hover {
+            color: rgb(54, 19, 211);
+        }
+
+        .search {
+            float: right;
+            color: white;
+            padding: 12px 15px;
+            
+
+
+        }
+
+        .navbar input {
+            /* z-index:inherit ; */
+            border: 2px solid black;
+            border-radius: 12px;
+            padding: 3px 17px;
+            width: 130px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-color: rgb(211, 148, 129);
+            background-image:url('buttki.jpeg');
+            
+        }
+
+        .container {
+            height: 150px;
+            width: 500px;
+            background-color: grey;
+            border: 3px solid rgb(129, 199, 129);
+            padding: 70px;
+            padding: 23px 34px 45px 56px;
+            /*top right bottom left*/
+            margin: 32px;
+            border-radius: 20px;
+            box-sizing: border-box;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li> <a href="#">Home</a></li>
+                <li> <a href="#">About</a></li>
+                <li> <a href="#">Services</a></li>
+                <li> <a href="#">contact us</a></li>
+                <div class="search">
+                    <input type="text" name="Search" id="Search" placeholder="Search here">
+                </div>
+            </ul>
+
+        </nav>
+    </header>
+    <div class="container">
+        <h3>This is Box Model</h3>
+        <p id="first">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum dicta asperiores quis
+            voluptatibus iusto? Sequi laborum eum eos excepturi vitae iure, in officia non sunt corrupti maxime fuga
+            itaque ad.</p>
+    </div>
+    <div class="container">
+        <h3>This is Box Model</h3>
+        <p id="second">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum dicta asperiores quis
+            voluptatibus iusto? Sequi laborum eum eos excepturi vitae iure, in officia non sunt corrupti maxime fuga
+            itaque ad.</p>
+    </div>
+    <div class="container">
+        <h3>This is Box Model</h3>
+        <p id="third">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum dicta asperiores quis
+            voluptatibus iusto? Sequi laborum eum eos excepturi vitae iure, in officia non sunt corrupti maxime fuga
+            itaque ad.</p>
+    </div>
+</body>
+
+</html>

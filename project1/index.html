@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vasu Fitness</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="CSS/style.css">
+<style>
+    body {
+        font-family: 'Baloo Bhaina 2', cursive;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url(gym3.jpg);
+        background-size: 1300px;
+        background-repeat: no-repeat;
+
+    }
+
+    .left {
+        position: absolute;
+        left: 15px;
+        top: 20px;
+        display: inline-block;
+        /* border: 2px solid rgb(199, 112, 112); */
+    }
+
+    .left img {
+        width: 140px;
+        height: 100px;
+    }
+
+    .left div {
+        line-height: 19px;
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .mid {
+        display: block;
+        width: 55%;
+        margin: 20px auto;
+        /* border: 2px solid rgb(189, 160, 88); */
+    }
+
+    .right {
+        position: absolute;
+        right: 0px;
+        top: 20px;
+        /* border: 2px solid rgb(107, 206, 107); */
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+
+        display: inline-block;
+
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px;
+        font-size: 18px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: gray;
+    }
+
+    .btn {
+        font-family: 'Baloo Bhaina 2', cursive;
+        margin: 0px 9px;
+        color: white;
+        background-color: black;
+        padding: 4px 14px;
+        border: 2px solid gray;
+        border-radius: 10px;
+        font-size: 8px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: gray;
+    }
+
+    .container {
+        font-family: 'Baloo Bhaina 2', cursive;
+        text-align: center;
+        border: 2px solid green;
+        margin: 106px 80px;
+        padding: 10px;
+        width: 45%;
+        border-radius: 20px;
+
+    }
+
+    .form-group input {
+        font-family: 'Baloo Bhaina 2', cursive;
+        text-align: center;
+        display: block;
+        width: 200px;
+        padding: 1px;
+        border: 2px solid black;
+        border-radius: 10px;
+        font-size: 14px;
+        margin: 10px auto;
+    }
+</style>
+
+<body>
+
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="gym.jpg" alt="">
+            <div>Vasu Fitness</div>
+        </div>
+
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li> <a href="#" class="active">Home</a></li>
+                <li> <a href="#">About</a></li>
+                <li> <a href="#">Fitness Calculator</a></li>
+                <li> <a href="#">Contact Us</a></li>
+            </ul>
+
+        </div>
+
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Gandhinagar now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Name">
+                <input type="text" placeholder="Enter your Age">
+                <input type="text" placeholder="Enter your Gender">
+                <input type="text" placeholder="Enter your Mobile No">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
